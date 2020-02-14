@@ -12,14 +12,14 @@ Given I can access the application
  When I enter bad credentials
  Then I can't Log in
 
-        Scenario: Register
-                Given I see the login page
-                And I go to register
-                When I enter "credentials"
-                Then I can login with those "credentials"
+ Scenario: Register
+ Given I see the {login} page
+ And I go to register
+ When I enter "credentials"
+ Then I can login with those "credentials"
 
-                        | credentials |
-                        | Alice |
-                        | Bob |
-                        | Eve |
+ | credentials |
+ | Alice |
+ | Bob |
+ | Eve |
 
